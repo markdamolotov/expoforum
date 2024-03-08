@@ -1,0 +1,53 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  border-bottom: 1px solid var(--color-white);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__menu {
+    color: var(--color-white);
+  }
+
+  &__menu-list {
+    display: flex;
+    align-items: center;
+    column-gap: 47px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+  }
+
+  &__search-button {
+    @include square(24px);
+    @include reset-button;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: var(--color-white);
+  }
+
+  &__translate-button {
+    @include reset-button;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 11px;
+    height: 25px;
+    color: var(--color-white);
+
+    svg {
+      align-self: flex-start;
+    }
+  }
+}
