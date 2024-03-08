@@ -1,0 +1,79 @@
+.hero {
+  position: relative;
+  height: 800px;
+  background: url('./../img/hero/hero-bg.webp') center/cover no-repeat;
+
+  &::after {
+    position: absolute;
+    content: '';
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(00, 00, 00, 0.3);
+    z-index: 1;
+  }
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    max-width: 450px;
+    position: relative;
+    z-index: 10;
+    padding-top: 275px;
+    color: var(--color-white);
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  &__links {
+    position: absolute;
+    content: '';
+    right: 15px;
+    bottom: 50px;
+    z-index: 10;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 255px);
+    gap: var(--gap);
+    color: var(--color-white);
+  }
+
+  &__item {
+    padding: 30px 40px;
+
+    &:nth-child(1) {
+      background-color: var(--color-blue);
+    }
+
+    &:nth-child(2) {
+      background-color: var(--color-green);
+    }
+
+    &:nth-child(3) {
+      background-color: var(--color-yellow);
+    }
+
+    &:nth-child(4) {
+      background-color: var(--color-red);
+    }
+  }
+
+  &__item-description {
+    margin-bottom: 15px;
+  }
+}
