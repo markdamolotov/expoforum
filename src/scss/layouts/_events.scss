@@ -1,0 +1,21 @@
+.events {
+  padding-block: var(--section-padding-y);
+  background-color: var(--color-yellow);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px var(--gap);
+  }
+}
